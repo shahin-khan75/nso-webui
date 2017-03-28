@@ -1,0 +1,85 @@
+
+*{padding:0px;margin:0px;font: normal 14px "Calibri",sanserif;}
+a{ text-decoration: none; }
+a:hover,.right-form a:hover,.cont-01 p a:hover{color:#0469B0;}
+body{font: normal 14px "Calibri",sanserif;color:#7D7D7D;  }
+body.login{background: #fff url("../img/login-bg.jpg") no-repeat left top; background-position: fixed;}
+.wrapper{max-width:1000px; margin:0 auto;overflow: hidden;}
+.logo{float:left;width::100%;}
+.right-form{float:right;width:406px; padding-top: 108px;    margin-left: 240px;}
+h2{color:#2B3B52;font-size:20px; text-transform: capitalize;width:100%;float:left; margin:40px 0 43px 0;}
+.user{text-transform: uppercase;color:#7D7D7D; border:none; background:none; border-bottom: 1px solid #A4A4A6;
+ padding: 6px;width:80%;float:left; margin-bottom: 30px; }
+ .right-form a{color:#0B8CCF;font-size:18px;width:100%;float:left;}
+ .login-btn{width:83%;float:left; margin-top: 20px;border:1px solid #55940A;color:#fff;font-size:18px; padding: 10px 0; text-align: center;
+background: #6dd908; /* Old browsers */
+background: -moz-linear-gradient(top, #6dd908 0%, #82da10 47%, #93db17 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #6dd908 0%,#82da10 47%,#93db17 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #6dd908 0%,#82da10 47%,#93db17 100%); }
+
+
+
+.login-btn:hover{background: #93db17; /* Old browsers */
+background: -moz-linear-gradient(top,  #93db17 1%, #82da10 56%, #6dd908 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #93db17 1%,#82da10 56%,#6dd908 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #93db17 1%,#82da10 56%,#6dd908 99%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93db17', endColorstr='#6dd908',GradientType=0 ); /* IE6-9 */}
+
+@media screen and (max-width: 780px) {
+    body {
+        background-image:none;
+    }
+}
+
+.main{ background:url(../img/inner-page-bg.png) no-repeat center -171px;}
+header{background:#162855;}
+.logo{float:left; padding-top:5px;}
+.navigation,.cont-01{float:right;}
+.navigation ul,.cont-01 ul{margin:0px; padding:0px;list-style:none;}
+.navigation ul li,.cont-01 ul li{float:left;}
+.navigation ul li a{color:#fff;font-size:14px; padding:20px 10px;display:block; text-transform:capitalize;}
+.navigation ul li a:hover{color:#ccc;}
+.cont-01{width:100%; margin-top:30px; margin-bottom:20px;}
+.cont-01 ul li{margin-left:32px;width:200px;}
+.admin{text-transform:capitalize; padding:20px 15px;}
+
+.cont-01 ul li a{display:block; text-align:center; padding-top:30px;margin-left:30px;font-size:16px; text-transform:capitalize;}
+.provision{ background:#8dd411; width:150px; height:120px; border-radius:75px;}
+.cont-01 p a{padding-top:10px !important; color:#3a3a3b;}
+
+.service-instance{ background:#f99d1b; width:150px; height:120px; border-radius:75px;}
+.service-instance img{margin-top:10px;}
+.reporting{ background:#409ad8; width:150px; height:120px; border-radius:75px;}
+.device{ background:#efbd0f;width:150px; height:120px; border-radius:75px;}
+
+.turn{ background:#7f4ba4;width:150px; height:120px; border-radius:75px;}
+.net-services{ background:#dcd627;width:150px; height:120px; border-radius:75px;}
+.validator{background:#be4a73;width:150px; height:120px; border-radius:75px;}
+.workflow{background:#aca6a8;width:150px; height:120px; border-radius:75px;}
+
+.service-path{ background:#d7b605;width:150px; height:120px; border-radius:75px;}
+.golden-services{ background:#60836c;width:150px; height:120px; border-radius:75px;}
+.job-manager{background:#abd127;width:150px; height:120px; border-radius:75px;}
+.form-builder{background:#ef892f;width:150px; height:120px; border-radius:75px;}
+.service-path img{ margin-top: 14px; margin-left: 10px;}
+
+.policy{ background:#76568d;width:150px; height:120px; border-radius:75px;}
+.service-manager{ background:#b94c73;width:150px; height:120px; border-radius:75px;}
+.provisioner{background:#727e76;width:150px; height:120px; border-radius:75px;}
+.mop{background:#1b4599;width:150px; height:120px; border-radius:75px;}
+
+
+.configure{ background:#e88a05;width:150px; height:120px; border-radius:75px;}
+.Networkview{ background:#67ba03;width:150px; height:120px; border-radius:75px;}
+.ACLManager{background:#d8aa08;width:150px; height:120px; border-radius:75px;}
+
+
+
+
+
+
+
+
+
+
+
