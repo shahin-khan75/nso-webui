@@ -14,8 +14,8 @@
 <form action="NSOController" method="post">
 <div class="wrapper">
 		<div class="right-form">
-			<div class="logo"><a href="#"><img src="../img/cisco-logo.png" alt="" /></a></div>
-			
+			<!-- <div class="logo"><a href="#"><img src="../img/cisco-logo.png" alt="" /></a></div> -->
+			<div class="logo"><a href="#"><img src="<c:url value="/resources/img/cisco-logo.png" />"/></a></div>
 			<h2>NSO member login</h2>
 			<input type="text" name="username" class="user">
 			<input type="password" name="password" class="user">
