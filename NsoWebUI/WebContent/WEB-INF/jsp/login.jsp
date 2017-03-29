@@ -19,14 +19,10 @@
 		<div class="right-form">
 			<div class="logo"><a href="#"><img src="<c:url value="/resources/img/cisco-logo.png" />"/></a></div>
 		
-			<h2>NSO member login</h2>
-				<c:if test="${not empty error}">
+		<c:if test="${not empty error}">
 			<div class="error-msg">${error}</div>
 		</c:if>
-		<c:if test="${not empty msg}">
-			<div class="error-msg">${msg}</div>
-		</c:if>
-			<%-- <br><spring:message code="msg.error" text="" /> --%>
+			<h2>NSO member login</h2>
 			<input type="text" name="username" class="user">
 			<input type="password" name="password" class="user">
 			<a href="#">forgot password?</a>
