@@ -21,12 +21,12 @@
 		
 			<h2>NSO member login</h2>
 				<c:if test="${not empty error}">
-			<div class="error">${error}</div>
+			<div class="error-msg">${error}</div>
 		</c:if>
 		<c:if test="${not empty msg}">
-			<div class="msg">${msg}</div>
+			<div class="error-msg">${msg}</div>
 		</c:if>
-			<br><spring:message code="msg.error" text="" />
+			<%-- <br><spring:message code="msg.error" text="" /> --%>
 			<input type="text" name="username" class="user">
 			<input type="password" name="password" class="user">
 			<a href="#">forgot password?</a>

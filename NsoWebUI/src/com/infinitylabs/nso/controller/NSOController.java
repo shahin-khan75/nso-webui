@@ -60,7 +60,7 @@ public class NSOController {
 				ModelAndView model=new ModelAndView();
 				model.setViewName("login");
 				model.addObject("loginBean", loginBean);
-				model.addObject("error", "Authauntaion failed");
+				model.addObject("error", "Authentication failed");
 			
 				return model;
 			}else {
