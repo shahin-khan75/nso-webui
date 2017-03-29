@@ -38,6 +38,9 @@
 	<property name="suffix" value=".jsp"></property>  
 	</bean>  
 	
+	<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+        <property name="basename" value="messages" />
+    </bean>
 	
    	<bean id ="loginBean" class ="com.infinitylabs.nso.bean.LoginBean"/>
    	<bean id ="logicService" class ="com.infinitylabs.nso.logic.LogicForWebService"/>

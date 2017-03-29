@@ -15,6 +15,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -36,7 +37,7 @@ public class NSOController {
         return new ModelAndView("login", "loginBean", loginBean);  
     }  
 	@RequestMapping(value="/login",method = RequestMethod.POST)
-	public ModelAndView loginMethod(@ModelAttribute("loginBean") LoginBean loginBean,HttpServletRequest request){
+	public ModelAndView loginMethod(@ModelAttribute("loginBean") LoginBean loginBean,HttpServletRequest request,BindingResult result){
 		HttpSession session;
 		ResponseEntity<String> loginResponse = logicService.getLogin(loginBean);
 		System.out.println(loginResponse.getBody());
@@ -56,8 +57,12 @@ public class NSOController {
 				session.setAttribute("user",request.getParameter("username"));
 				return new ModelAndView("catalogue", "loginBean", loginBean);
 			}else if(outputjson.has("error")){
-				
-				return new ModelAndView("login", "loginBean", loginBean);
+				ModelAndView model=new ModelAndView();
+				model.setViewName("login");
+				model.addObject("loginBean", loginBean);
+				model.addObject("error", "Authauntaion failed");
+			
+				return model;
 			}else {
 				return null;
 			}
