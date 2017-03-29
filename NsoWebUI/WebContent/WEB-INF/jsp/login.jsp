@@ -1,20 +1,11 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<!DOCTYPE html>
-<html>
-<head>
-<title>NSO</title>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
  <link href="<c:url value="/resources/css/style.css" />" rel="stylesheet">
-
-
-
-</head>
 <body class="login">
-<form action="NSOController" method="post">
+<form:form action="login" method="post" commandName="loginBean">
 <div class="wrapper">
 		<div class="right-form">
-			<!-- <div class="logo"><a href="#"><img src="../img/cisco-logo.png" alt="" /></a></div> -->
 			<div class="logo"><a href="#"><img src="<c:url value="/resources/img/cisco-logo.png" />"/></a></div>
 			<h2>NSO member login</h2>
 			<input type="text" name="username" class="user">
@@ -25,7 +16,7 @@
 		</div>
 
 	</div>
-	</form>
+	</form:form>
 
 </body>
 

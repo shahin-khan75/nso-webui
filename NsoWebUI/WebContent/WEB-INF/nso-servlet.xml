@@ -26,11 +26,11 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
         
+<!-- these two lines are added for css,images and js file use   -->
     <mvc:resources mapping="/resources/**" location="/resources/static/" cache-period="1000"/>
     <mvc:annotation-driven />
-        
-        
-        
+<!-- from here -->
+
     <context:component-scan base-package="com.infinitylabs.nso.controller" />  
         
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">  
@@ -40,7 +40,7 @@
 	
 	
    	<bean id ="loginBean" class ="com.infinitylabs.nso.bean.LoginBean"/>
-   	
+   	<bean id ="logicService" class ="com.infinitylabs.nso.logic.LogicForWebService"/>
    	
    	
   
